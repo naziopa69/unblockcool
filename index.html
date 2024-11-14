@@ -18,7 +18,7 @@
         header {
           background-color: #343a40;
           color: #fff;
-          padding: 10px 20px;
+          padding: 20px 20px;
           text-align: center;
           display: flex;
           align-items: center;
@@ -31,9 +31,9 @@
           margin-right: 10px;
         }
         .container {
-          max-width: 800px;
+          max-width: 1000px;
           margin: 150px auto 0 auto;
-          padding: 20px;
+          padding: 30px;
           text-align: center;
           background: #fff;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -143,10 +143,10 @@
     </header>
     
     <div class="container">
-      <label for="iframeSelect" id="labelForIframeSelect">Select extension:</label>
+      <label for="iframeSelect" id="labelForIframeSelect">Select different proxies:</label>
       <select id="iframeSelect">
       </select>
-      <button onclick="warning();" id="hangButton">Hang Extension!</button>
+      <button onclick="warning();" id="hangButton">Open proxy!</button>
       <button id="killButton" onclick="openExtensionPopup();">Kill Extension!</button>
     </div>
     
@@ -173,9 +173,9 @@
       async function populateSelectOptions() {
         const selectElement = document.getElementById("iframeSelect");
         const extensions = {
-          "Lightspeed Filter Agent": "chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/icon-128.png",
-          "Lightspeed Classroom": "chrome-extension://kkbmdgjggcdajckdlbngdjonpchpaiea/assets/icon-classroom-128.png",
-          "Lightspeed Digital Insight Agent": "chrome-extension://njdniclgegijdcdliklgieicanpmcngj/images/digital-insight(128x128).png",
+          "CroxyProxy 2.0": "chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/icon-128.png",
+          "Dev Proxy Classroom": "chrome-extension://kkbmdgjggcdajckdlbngdjonpchpaiea/assets/icon-classroom-128.png",
+          "Proxy installation Digital": "chrome-extension://njdniclgegijdcdliklgieicanpmcngj/images/digital-insight(128x128).png",
     
         };
         
